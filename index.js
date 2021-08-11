@@ -205,10 +205,20 @@ Use the getAverageWordLength function below to do the following:
   For example: getAverageWordLength(originalFlavors) should return a number between 0 and 3.     
 */
 
-function getAverageWordLength(/*code here*/){
-  /*code here*/
+// Definitely confused on this one. Understand I need to set a variable equal to the number of words in each index, but confused on how to average the number of words in the array.
+function getAverageWordLength(array){
+  let wordCount = 1;
+  for (let i = 0; i < array.length; i++){
+    if (array[i].includes(' ')){
+      let wordCount = array[i].split(' ').length;
+      let averageLength = (wordCount / array[i].length);
+      return averageLength;
+    } else {
+      return 1;
+    }
+  }
 }
-
+console.log(getAverageWordLength(originalFlavors));
 
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪
 Baskin Robins now offers new flavors, seasonal flavors, and even regional flavors. Write a function that will randomly select a total of 31 flavors 
@@ -222,9 +232,16 @@ Use the getRandomFlavors function and new arrays below to do the following:
   For example: getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors) might return ["Strawberry Cheesecake", "Eggnog,"..."Chocolate"].
 */
 
+// Four parameters - different arrays
+function getRandomFlavors(array1, array2, array3, array4){
+  let randomFlavors = [];
+  for (i = 0; i < array1.length; i++){
+    
+  }
 
-function getRandomFlavors(/*code here*/){
   /*code here*/
+  //Randomly selects up to 31 items from the four arrays
+  //Adds those 31 items to a new array
 }
 
 // NEW DATA ARRAYS FOR STRETCH 2 ⬇️
