@@ -233,11 +233,18 @@ Use the getRandomFlavors function and new arrays below to do the following:
 */
 
 // Four parameters - different arrays
-function getRandomFlavors(array1, array2, array3, array4){
-  let randomFlavors = [];
-  for (i = 0; i < array1.length; i++){
-    
-  }
+
+// Tried to push items from each of the four arrays to randomFlavors until it reached a length of 31 items. but it crashed 
+
+//  function getRandomFlavors(array1, array2, array3, array4){
+//   let randomFlavors = [];
+//   while (randomFlavors.length < 31){
+//     randomFlavors.push(array1[(Math.round(Math.random * array1.length))], array2[(Math.round(Math.random * array2.length))], array3[(Math.round(Math.random * array3.length))], array4[(Math.round(Math.random * array4.length))],)
+//   }
+//   return randomFlavors
+//   }
+
+//   console.log(randomFlavors);
 
   /*code here*/
   //Randomly selects up to 31 items from the four arrays
